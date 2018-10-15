@@ -14,12 +14,12 @@
     	<div class="form-div">
             <h1>StoreManager</h1>
         	<div id="logo_img">
-                <img src="assets/logo/logo.png" width="140" height="140" alt="logo">
+                <img id="logopng"src="assets/logo/logo.png" width="140" height="140" alt="logo">
             </div>
             <span class="login_form_title">LOG IN</span>
             <div id="username_error" class="val_error"></div><div id="Password_error" class="val_error"></div>
 
-       	    <form method="POST" onsubmit ="return validate();" id="login-form" name = "login-form" action="#">
+       	    <form method="POST" action="admin.html" onsubmit ="return validate();" id="login-form" name = "login-form" action="#">
            		<div class='form-row'>
                   <label for='username'><img src="assets/ico/username-icon.png" width="18" height="18" alt="username icon">&nbsp;&nbsp;&nbsp;Username</label><br/>
                     <input class = 'input_username' id='username' name='username' onClick="validate()" type='text'/>
@@ -29,7 +29,6 @@
                     <input id='password' name='password' type='password'/>
                 </div>
 				<div class="custom-select">
-                <div id="arrow_icon"><img src="assets/ico/arrow-icon.png" width="15" height="15" alt="selection-icon"></div>
                 <select>
                     <option class="role" value="0">&nbsp;&nbsp;&nbsp;Select role</option>
                     <option class="role" value="1">Admin</option>
@@ -49,6 +48,10 @@
                 <div class='form-row-forgot-password'>
                     <div><a href="#" id="forgot_password">Forgot Password</a></div>
                 </div>
+                <div class='form-row'>
+                    <div><a href="#" id="forgot_password">Don't have account, kindly contact Admin</a></div>
+                </div>
+
             </form>
         </div>
     </section>
