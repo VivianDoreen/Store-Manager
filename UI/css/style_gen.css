@@ -29,6 +29,12 @@ header{
     background-color: #f7fafb;
     line-height: 3em;
 }
+
+#profile_pic{
+    float: right;
+    line-height: 0.2em;
+    margin-left: 7cm;
+}
 h1{
     padding-left: 5px;
     font-size: 18px;
@@ -344,6 +350,15 @@ h2{
   
   #myTable tr.header, #myTable tr:hover {
     background-color: #f1f1f1;
+  }
+  #welcome{
+      text-align: center;
+      height: 1cm;
+      padding: 5px;
+  }
+  #desc{
+      margin-top: 1cm;
+      text-align: center;
   }
 footer{
 	color:#000000;
