@@ -1,0 +1,219 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+    <meta charset="utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <title>admin</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="font-awesome.css">
+    <link rel="stylesheet" type="text/css" media="screen" href="css/style_gen.css"/>
+    <link rel="shortcut icon" href="assets/ico/favicon.png">
+    <script src="javascript/main.js" type="text/javascript"></script>
+</head>
+
+<body>
+    <header>
+        <section> 
+            <img id="logopng" src="assets/logo/logo1.png" width="50" height="50" alt="logo">
+            <h1><a href="admin.html">StoreManager</a></h1>
+            <nav id="top_nav">
+                <ul>
+                    <li><a href="register_attendant.html">Register Attendant</a></li>
+                    <li><a href="#">Store Attendants</a>
+                        <ul>
+                            <li><a href="store_attendants_list.html">Store Attendant</a></li>
+                            <li><a href="store_attendants.html">Attendants Report</a></li>
+                        </ul>
+                    </li>
+                    <li><a href="#">Settings</a>
+                        <ul>
+                            <li><a href="admin_settings.html">Admin</a></li>
+                            <li><a href="assign_roles.html">Assign Role</a></li>
+                        </ul>
+                    </li>
+                    <li><a href="index.html">Logout</a></li>
+                </ul>
+            </nav>
+            <div id="profile_pic">Nabwire Cedella (Admin) <img id="logopng" src="assets/portfolio/IMG_1473.JPG" width="50" height="50" alt="portfolio"></div>
+        </section>
+    </header>
+    <section>
+
+        <aside>
+           <nav id="side_nav">
+                <ul>
+                    <li class="active_link"><a href="admin.html"><span class="fa fa-home"></span>Dashboard</a></li>
+                    <li><a href="#">Contact</a>
+                        <ul>
+                            <li><a href="clients.html">Clients</a></li>
+                            <li><a href="suppliers.html">Suppliers</a></li>
+                            <li><a href="store_attendants.html">Store Attendants</a></li>
+                        </ul>
+                    </li>
+                    <li><a href="store_name.html">Store</a></li>
+                    <li><a href="">Products</a>
+                        <ul>
+                            <li><a href="products.html">Products</a></li>
+                            <li><a href="products_report.html">Products report</a></li>
+                        </ul>
+                    </li>
+                    <li><a href="#">Stock Inflows</a>
+                        <ul>
+                            <li><a href="stock_inflow.html">Stock inflow</a></li>
+                            <li><a href="stock_inflow_report.html">Stock inflow report</a></li>
+                        </ul>
+                    </li>
+                    <li><a href="#">Stock outflows</a>
+                        <ul>
+                            <li><a href="stock_outflow.html">Stock outflow</a></li>
+                            <li><a href="stock_outflow_report.html">Stock outflows report</a></li>
+                        </ul>
+                    </li>
+                    <li><a href="Product_catalog.html">Product catalog</a></li>
+                    <li><a href="shopping_cart.html">shopping cart</a></li>
+                </ul>
+           </nav>
+        </aside>
+        <article>
+            <div id="system_info">
+                <time><strong>Date: </strong>02/12/018</time>
+            </div>
+            <div id="general_add"><h2>Our Store Attendants</h2></div>
+            <div id="gen_list">
+                <div id="search"><input type="text" id="myInput" onkeyup="myFunction()" placeholder="Search for store attendant.." title="Type in a name"></div>
+                <table id="myTable">
+                    <tr class="header">
+                        <th>#</th>
+                        <th>Name</th>
+                        <th>gender</th>
+                        <th>Address</th>
+                        <th>Email</th>
+                        <th>Contact</th>
+                        <th colspan="2" style="text-align:center">Attendant Action</th>
+                    </tr>
+                    <tr>
+                        <td>1</td>
+                        <td>Nabulo Vivian Doreen</td>
+                        <td>Female</td>
+                        <td>Kamulo</td>
+                        <td>nabulov@gmail.com</td>
+                        <td>0704224134</td>
+                        <td><a href="attendant_sales.html">View Sales</a></td>
+                        <td><a href="attendant_profile.html">View profile</a></td>
+                    </tr>
+                    <tr>
+                        <td>2</td>
+                        <td>Wamale Eric</td>
+                        <td>Male</td>
+                        <td>Nasser</td>
+                        <td>eric@gmail.com</td>
+                        <td>0758715335</td>
+                        <td><a href="attendant_sales.html">View Sales</a></td>
+                        <td><a href="attendant_profile.html">View profile</a></td>
+                    </tr>
+                    <tr>
+                        <td>3</td>
+                        <td>Ceaser Nathan</td>
+                        <td>Male</td>
+                        <td>Bukoto</td>
+                        <td>nathan@gmail.com</td>
+                        <td>0779582546</td>
+                        <td><a href="attendant_sales.html">View Sales</a></td>
+                        <td><a href="attendant_profile.html">View profile</a></td>
+                    </tr>
+                    <tr>
+                        <td>4</td>
+                        <td>Ssozi Anthony</td>
+                        <td>Male</td>
+                        <td>Kamyokya</td>
+                        <td>sozi@gmail.com</td>
+                        <td>0704224134</td>
+                        <td><a href="attendant_sales.html">View Sales</a></td>
+                        <td><a href="attendant_profile.html">View profile</a></td>
+                    </tr>
+                    <tr>
+                        <td>5</td>
+                        <td>Namee Winfred</td>
+                        <td>Female</td>
+                        <td>Kibuli</td>
+                        <td>winnie@gmail.com</td>
+                        <td>0745287953</td>
+                        <td><a href="attendant_sales.html">View Sales</a></td>
+                        <td><a href="attendant_profile.html">View profile</a></td>
+                    </tr>
+                    <tr>
+                        <td>6</td>
+                        <td>Atwine Vivian D</td>
+                        <td>Male</td>
+                        <td>Kamulo</td>
+                        <td>nabulov@gmail.com</td>
+                        <td>0704224134</td>
+                        <td><a href="attendant_sales.html">View Sales</a></td>
+                        <td><a href="attendant_profile.html">View profile</a></td>
+                    </tr>
+                    <tr>
+                        <td>7</td>
+                        <td>Nabwire Cedella</td>
+                        <td>Female</td>
+                        <td>Muk</td>
+                        <td>ced@gmail.com</td>
+                        <td>0704224134</td>
+                        <td><a href="attendant_sales.html">View Sales</a></td>
+                        <td><a href="attendant_profile.html">View profile</a></td>
+                    </tr>
+                    <tr>
+                        <td>8</td>
+                        <td>Nabutuwa Janet</td>
+                        <td>Female</td>
+                        <td>Mutungo</td>
+                        <td>janetv@gmail.com</td>
+                        <td>07042598754</td>
+                        <td><a href="attendant_sales.html">View Sales</a></td>
+                        <td><a href="attendant_profile.html">View profile</a></td>
+                    </tr>
+                    <tr>
+                        <td>9</td>
+                        <td>Mukuwa Lawrence</td>
+                        <td>Male</td>
+                        <td>Wandegeya</td>
+                        <td>mukuwa@gmail.com</td>
+                        <td>0701224134</td>
+                        <td><a href="attendant_sales.html">View Sales</a></td>
+                        <td><a href="attendant_profile.html">View profile</a></td>
+                    </tr>
+                    <tr>
+                        <td>10</td>
+                        <td>Nabakooza Joan</td>
+                        <td>Female</td>
+                        <td>Nsambya</td>
+                        <td>joan@gmail.com</td>
+                        <td>0777224134</td>
+                        <td><a href="attendant_sales.html">View Sales</a></td>
+                        <td><a href="attendant_profile.html">View profile</a></td>
+                    </tr>
+                </table>
+                <div id="pagination">
+                    <a href="#">Previous</a>
+                    <a href="#">1</a>
+                    <a href="#">2</a>
+                    <a href="#">3</a>
+                    <a href="#">4</a>
+                    <a href="#">5</a>
+                    <a href="#">6</a>
+                    <a href="#">7</a>
+                    <a href="#">8</a>
+                    <a href="#">9</a>
+                    <a href="#">10</a>
+                    <a href="#">Next</a>
+                </div>
+            </div>
+        </article>
+    </section>
+    <footer>
+    		<div class="copyright">
+                <p class="pull-left">&copy; 2018 Store Manager. All Rights Reserved.</p>
+                <p class="pull-right">Created By &nbsp;<p class="pull-rightright">Nabulo Vivian Doreen</p></p>
+    		</div><!-- /copyright -->         
+    </footer>
+</body>
+</html>
