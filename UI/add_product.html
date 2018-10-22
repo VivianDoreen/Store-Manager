@@ -17,26 +17,23 @@
             <h1><a href="admin.html">StoreManager</a></h1>
             <nav id="top_nav">
                 <ul>
-                    <li><a href="#">Register Attendant</a></li>
+                    <li><a href="register_attendant.html">Register Attendant</a></li>
                     <li><a href="#">Store Attendants</a>
                         <ul>
-                            <li><a href="#">Attendant</a></li>
-                            <li><a href="#">Attendants</a></li>
+                            <li><a href="store_attendants_list.html">Store Attendant</a></li>
+                            <li><a href="store_attendants.html">Attendants Report</a></li>
                         </ul>
                     </li>
                     <li><a href="#">Settings</a>
                         <ul>
-                            <li><a href="#">Admin</a></li>
-                            <li><a href="#">Attendant</a></li>
-                            <li><a href="#">Clients</a></li>
-                            <li><a href="#">Suppliers</a></li>
-
+                            <li><a href="admin_settings.html">Admin</a></li>
+                            <li><a href="assign_roles.html">Assign Role</a></li>
                         </ul>
                     </li>
-                    <li><a href="#">Logout</a></li>
+                    <li><a href="index.html">Logout</a></li>
                 </ul>
             </nav>
-            Nabwire Cedella<img id="logopng" src="assets/portfolio/IMG_1473.JPG" width="50" height="50" alt="portfolio">
+            <div id="profile_pic">Nabwire Cedella (Admin) <img id="logopng" src="assets/portfolio/IMG_1473.JPG" width="50" height="50" alt="portfolio"></div>
         </section>
     </header>
     <section>
@@ -44,46 +41,31 @@
         <aside>
            <nav id="side_nav">
                 <ul>
-                    <li><a href="#"><span class="fa fa-home"></span>Dashboard</a></li>
+                    <li class="active_link"><a href="admin.html"><span class="fa fa-home"></span>Dashboard</a></li>
                     <li><a href="#">Contact</a>
                         <ul>
-                            <li><a href="#">Clients</a></li>
-                            <li><a href="#">Suppliers</a></li>
-                            <li><a href="#">Attendant</a></li>
+                            <li><a href="clients.html">Clients</a></li>
+                            <li><a href="suppliers.html">Suppliers</a></li>
+                            <li><a href="store_attendants.html">Store Attendants</a></li>
                         </ul>
-    
                     </li>
                     <li><a href="store_name.html">Store</a></li>
-                    <li><a href="#">Products</a>
+                    <li><a href="">Products</a>
                         <ul>
-                            <li><a href="#">Product</a>
-                                <ul>
-                                    <li><a href="#">View</a></li>
-                                    <li><a href="add_product.html">Add</a></li>
-                                    <li><a href="#">Edit</a></li>
-                                    <li><a href="#">Delete</a></li>
-                                </ul>
-                            </li>
-                            <li><a href="#">Products</a></li>
+                            <li><a href="products.html">Products</a></li>
+                            <li><a href="products_report.html">Products report</a></li>
                         </ul>
                     </li>
                     <li><a href="#">Stock Inflows</a>
                         <ul>
-                            <li><a href="#">Stock inflow</a>
-                                <ul>
-                                    <li><a href="#">View</a></li>
-                                    <li><a href="stock_inflow.html">Add</a></li>
-                                    <li><a href="#">Edit</a></li>
-                                    <li><a href="#">Delete</a></li>
-                                </ul>
-                            </li>
-                            <li><a href="#">Stock inflow report</a></li>
+                            <li><a href="stock_inflow.html">Stock inflow</a></li>
+                            <li><a href="stock_inflow_report.html">Stock inflow report</a></li>
                         </ul>
                     </li>
                     <li><a href="#">Stock outflows</a>
                         <ul>
-                            <li><a href="#">Stock outflow</a></li>
-                            <li><a href="#">Stock outflows report</a></li>
+                            <li><a href="stock_outflow.html">Stock outflow</a></li>
+                            <li><a href="stock_outflow_report.html">Stock outflows report</a></li>
                         </ul>
                     </li>
                     <li><a href="Product_catalog.html">Product catalog</a></li>
@@ -96,16 +78,12 @@
                 <time><strong>Date: </strong>02/12/018</time>
             </div>
             <div id="general_form">
-                <div id="general_add"><h2> Product to the Store</h2></div>
+                <div id="general_add"><h2> Add product to the Store</h2></div>
                 <form method="POST" action="#" onsubmit ="return validate();" id="pdt-form" name = "pdt-form">
                     <div class='form-row'>
                         <label for='Upload_image'>Upload image: <input type="file" name="pic" accept="image/*"></label>
                     </div>
                     
-                    <div class='form-row'>    
-                    <label for='Product'>Product code:</label><br/>
-                        <input type='text' id='pdt_code' name='pdt_code' class = 'input_pdt_code'/>
-                    </div>   
                     <div class='form-row'>
                         <label for='Product_name'>Product name:</label>
                         <input id='Product_name' name='Product_name' type='text'/>

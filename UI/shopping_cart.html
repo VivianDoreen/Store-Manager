@@ -13,31 +13,13 @@
 
 <body>
     <header>
-        <section> 
+       <section> 
             <img id="logopng" src="assets/logo/logo1.png" width="50" height="50" alt="logo">
-            <h1><a href="admin.html">StoreManager</a></h1>
-            <nav id="top_nav">
-                <ul>
-                    <li><a href="#">Register Attendant</a></li>
-                    <li><a href="#">Store Attendants</a>
-                        <ul>
-                            <li><a href="#">Attendant</a></li>
-                            <li><a href="#">Attendants</a></li>
-                        </ul>
-                    </li>
-                    <li><a href="#">Settings</a>
-                        <ul>
-                            <li><a href="#">Admin</a></li>
-                            <li><a href="#">Attendant</a></li>
-                            <li><a href="#">Clients</a></li>
-                            <li><a href="#">Suppliers</a></li>
-
-                        </ul>
-                    </li>
-                    <li><a href="#">Logout</a></li>
-                </ul>
-            </nav>
-            Nabwire Cedella<img id="logopng" src="assets/portfolio/IMG_1473.JPG" width="50" height="50" alt="portfolio">
+            <h1><a href="attendant_page.html">StoreManager</a></h1>
+            <div id="profile_pic_attendant">
+                Makula Godwin (Attendant) <img id="logopng" src="assets/portfolio/IMG_1473.JPG" width="50" height="50" alt="portfolio">
+                <a href="index.html">Logout</a>
+            </div>
         </section>
     </header>
     <section>
@@ -45,49 +27,13 @@
         <aside>
            <nav id="side_nav">
                 <ul>
-                    <li><a href="#"><span class="fa fa-home"></span>Dashboard</a></li>
-                    <li><a href="#">Contact</a>
-                        <ul>
-                            <li><a href="#">Clients</a></li>
-                            <li><a href="#">Suppliers</a></li>
-                            <li><a href="#">Attendant</a></li>
-                        </ul>
-    
-                    </li>
-                    <li><a href="store_name.html">Store</a></li>
-                    <li><a href="#">Products</a>
-                        <ul>
-                            <li><a href="#">Product</a>
-                                <ul>
-                                    <li><a href="#">View</a></li>
-                                    <li><a href="add_product.html">Add</a></li>
-                                    <li><a href="#">Edit</a></li>
-                                    <li><a href="#">Delete</a></li>
-                                </ul>
-                            </li>
-                            <li><a href="#">Products</a></li>
-                        </ul>
-                    </li>
-                    <li><a href="#">Stock Inflows</a>
-                        <ul>
-                            <li><a href="#">Stock inflow</a>
-                                <ul>
-                                    <li><a href="#">View</a></li>
-                                    <li><a href="stock_inflow.html">Add</a></li>
-                                    <li><a href="#">Edit</a></li>
-                                    <li><a href="#">Delete</a></li>
-                                </ul>
-                            </li>
-                            <li><a href="#">Stock inflow report</a></li>
-                        </ul>
-                    </li>
+                    <li class="active_link"><a href="attendant_page.html"><span class="fa fa-home"></span>Dashboard</a></li>
                     <li><a href="#">Stock outflows</a>
                         <ul>
-                            <li><a href="#">Stock outflow</a></li>
-                            <li><a href="#">Stock outflows report</a></li>
+                            <li><a href="stock_outflow.html">Stock outflow</a></li>
+                            <li><a href="stock_outflow_report.html">Stock outflows report</a></li>
                         </ul>
                     </li>
-                    <li><a href="Product_catalog.html">Product catalog</a></li>
                     <li><a href="shopping_cart.html">shopping cart</a></li>
                 </ul>
            </nav>
@@ -98,7 +44,14 @@
             </div>
             <div id="general_form">
                 <div id="general_add"><h2> Available products in the Manager Store</h2></div>
-                    <div id="search_pdt"><input type="text" id="myInput" onkeyup="myFunction()" placeholder="Search for products.." title="Type in a name"></div>
+                    <div id="search_pdt">
+                                    <select>
+                                        <option class="role" value="0">&nbsp;&nbsp;&nbsp;Search by</option>
+                                        <option class="role" value="1">All</option>
+                                        <option class="role" value="2">Product</option>
+                                        <option class="role" value="3">Category</option>
+                                    </select>
+                        <input type="text" id="myInput" onkeyup="myFunction()" placeholder="Search for products.." title="Type in a name"></div>
                     <div id ="view_product">
                         <div class="pdt_images_dec">
                             <a target="_blank" href="pdt_details.html">
