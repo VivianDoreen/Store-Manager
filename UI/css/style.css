@@ -52,11 +52,16 @@ html {
   -moz-background-size: cover;
   -o-background-size: cover;
   background-size: cover;
+  height: 100%;
+  box-sizing: border-box;
 }
 
 body{
-        margin:1em;
-		
+    position: relative;
+    margin: 0;
+    padding-bottom: 6rem;
+    min-height: 100%;
+    font-family: Arial, Helvetica, sans-serif;		
 }
 
 header{
@@ -250,8 +255,13 @@ button:hover{
 	top:34em;
 	}
 footer{
+    position: absolute;
+    right: 0;
+    bottom: 0;
+    left: 0;
 	color:#FFF;
-	margin-top:2em;
+    margin-top:2em;
+    padding-bottom: 0.3cm;
 	}
 .pull-left{
 	float:left;
