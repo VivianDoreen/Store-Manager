@@ -10,6 +10,7 @@
     <link rel="shortcut icon" href="assets/ico/favicon.png">
     <script src="javascript/main.js" type="text/javascript"></script>
 </head>
+
 <body>
     <header>
         <section> 
@@ -37,8 +38,9 @@
         </section>
     </header>
     <section>
+
         <aside>
-           <nav id="side_nav">
+          <nav id="side_nav">
                 <ul>
                     <li class="active_link"><a href="admin.html"><span class="fa fa-home"></span>Dashboard</a></li>
                     <li><a href="#">Contact</a>
@@ -61,14 +63,33 @@
                             <li><a href="stock_inflow_report.html">Stock inflow report</a></li>
                         </ul>
                     </li>
+                    <li><a href="#">Stock outflows</a>
+                        <ul>
+                            <li><a href="stock_outflow.html">Stock outflow</a></li>
+                            <li><a href="stock_outflow_report.html">Stock outflows report</a></li>
+                        </ul>
+                    </li>
                     <li><a href="Product_catalog.html">Product catalog</a></li>
+                    <li><a href="shopping_cart.html">shopping cart</a></li>
                 </ul>
            </nav>
         </aside>
-       <article>
-           <p><h2 id="welcome">Welcome to managerStore</h2></p>
-           <p id="desc">A web application that helps owners manage sales and product inventory records</p>
-       </article>
+        <article>
+            <div id="system_info">
+                    <time><strong>Date: </strong>02/12/018</time>
+            </div>
+            <div id="general_add"><h2>Update Admin Info</h2></div>
+            <div id="store_location">
+                <table id="store_table">
+                    <tr>
+                        <th><a href="update_username.html">Username</a></th>
+                    </tr>
+                    <tr>
+                        <th><a href="update_password.html">Password</a></th>
+                    </tr>
+                </table>
+            </div>
+        </article>
     </section>
     <footer>
     		<div class="copyright">

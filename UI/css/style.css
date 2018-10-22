@@ -157,7 +157,7 @@ button:hover{
     background-image: linear-gradient(orange, orangered);
 }
 .form-row-forgot-password{
-	width:35%;
+	width:60%;
 	font-size:bold;
 	padding-bottom:2.3em;
 	margin:0px auto;

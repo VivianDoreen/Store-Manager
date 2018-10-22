@@ -37,6 +37,7 @@
         </section>
     </header>
     <section>
+
         <aside>
            <nav id="side_nav">
                 <ul>
@@ -61,21 +62,49 @@
                             <li><a href="stock_inflow_report.html">Stock inflow report</a></li>
                         </ul>
                     </li>
+                    <li><a href="#">Stock outflows</a>
+                        <ul>
+                            <li><a href="stock_outflow.html">Stock outflow</a></li>
+                            <li><a href="stock_outflow_report.html">Stock outflows report</a></li>
+                        </ul>
+                    </li>
                     <li><a href="Product_catalog.html">Product catalog</a></li>
+                    <li><a href="shopping_cart.html">shopping cart</a></li>
                 </ul>
            </nav>
         </aside>
-       <article>
-           <p><h2 id="welcome">Welcome to managerStore</h2></p>
-           <p id="desc">A web application that helps owners manage sales and product inventory records</p>
-       </article>
+        <article>
+            <div id="system_info">
+                <time><strong>Date: </strong>02/12/018</time>
+            </div>
+            <div id="general_form">
+                <div id="general_add"><h2> Assign role as admin</h2></div>
+                <form method="POST" action="#" onsubmit ="return validate();" id="pdt-form" name = "pdt-form">
+                    <div class='form-row'>
+                        <label for='name'>Username:</label>
+                        <input id='name' name='name' type='text'/>
+                    </div>
+                    <div class='form-row'>
+                        <label for='name'>password:</label>
+                        <input id='name' name='name' type='password'/>
+                    </div>
+                    <div class='form-row'>
+                        <label for='name'>Confirm password:</label>
+                        <input id='name' name='name' type='password'/>
+                    </div>
+                    <div class='form-row-button'>
+                        <button>Assign</button>
+                        <button>Reset</button>
+                    </div>
+                </form>
+            </div>
+        </article>
     </section>
     <footer>
     		<div class="copyright">
                 <p class="pull-left">&copy; 2018 Store Manager. All Rights Reserved.</p>
                 <p class="pull-right">Created By &nbsp;<p class="pull-rightright">Nabulo Vivian Doreen</p></p>
     		</div><!-- /copyright -->         
-    </footer>
-    <time></time>
+    </footer>    <time></time>
 </body>
 </html>
