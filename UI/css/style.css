@@ -120,12 +120,12 @@ button:focus,
 select{
     outline: none;
 }
-input[type=text], input[type=password], .form-row, button, .form-row-forgot-password, .form-row-button, .custom-select select{
+input[type=text], input[type=email], input[type=password], .form-row, button, .form-row-forgot-password, .form-row-button, .custom-select select{
     color: #ffffff;
     font-family: Nexa light;
 }
 
-input[type=text], input[type=password], .custom-select select{
+input[type=text], input[type=email], input[type=password], .custom-select select{
     width: 100%;
     background: transparent;
     border: none;
