@@ -10,7 +10,7 @@
     <link rel="shortcut icon" href="assets/ico/favicon.png">
     <script src="javascript/main.js" type="text/javascript"></script>
 </head>
-<body>
+<body onload="get_product_id()">
     <header>
 		<section> 
             <img id="logopng" src="assets/logo/logo1.png" width="50" height="50" alt="logo">
@@ -22,55 +22,41 @@
         </section>
     </header>
     <section>
-
         <aside>
-           <nav id="side_nav">
+            <nav id="side_nav">
                 <ul>
                     <li class="active_link"><a href="attendant_page.html"><span class="fa fa-home"></span>Dashboard</a></li>
-                    <li><a href="#">Stock outflows</a>
-                        <ul>
-                            <li><a href="stock_outflow.html">Stock outflow</a></li>
-                            <li><a href="stock_outflow_report.html">Stock outflows report</a></li>
-                        </ul>
-                    </li>
-                    <li><a href="shopping_cart.html">shopping cart</a></li>
+                    <li><a href="stock_outflow.html">Stock outflow</a></li>
+                    <li><a href="stock_outflow_report.html">Stock outflows report</a></li>
                 </ul>
-           </nav>
+            </nav>
         </aside>
         <article>
             <div id="system_info">
                 <time><strong>Date: </strong>02/12/018</time>
             </div>
             <div id="general_form">
+                <div id="product"></div>
+                <div id="pdt_unit_price"></div>
+                <div id="pdt_quantity"></div>
                 <div id="general_add"><h2>Add Sales</h2></div>
-                <form method="GET" action="#" onsubmit ="return validate();" id="pdt-form" name = "pdt-form">
+                <div id="message"></div>
+                <form method="" action="#" id="sales-form" name = "pdt-form">
+                    <div class='form-row' id="message"></div>
                     <div class='form-row'>    
                         <label for='Product'>Product code:</label><br/>
-                        <input type='text' id='pdt_code' name='pdt_code' class = 'input_pdt_code'/>
+                        <input type='number' id='pdt_code' name='pdt_code' class = 'input_pdt_code' disabled/>
                     </div>   
                     <div class='form-row'>
-                        <label for='Pdt_category'>Product Name:</label>
-                        <input id='Pdt_category' name='Pdt_category' type='text'/>
-                    </div>   
-                    <div class='form-row'>
-                        <label for='Pdt_category'> Measure Unit</label>
-                        <input id='Pdt_category' name='Pdt_category' type='text'/>
+                        <label for='quantity'>Quantity</label>
+                        <input id='quantity' name='quantity' type='number'/>
                     </div>
                     <div class='form-row'>
-                        <label for='Pdt_category'>Quantiy</label>
-                        <input id='Pdt_category' name='Pdt_category' type='text'/>
+                        <label for='unit_price'>Unit Price</label>
+                        <input id='unit_price' name='unit_price' type='number'/>
                     </div>
-                    <div class='form-row'>
-                        <label for='Pdt_category'>Unit Price</label>
-                        <input id='Pdt_category' name='Pdt_category' type='text'/>
-                    </div>
-                    <div class='form-row'>
-                            <label for='Pdt_category'>Total Price</label>
-                            <input id='Pdt_category' name='Pdt_category' type='text'/>
-                        </div>
                     <div class='form-row-button'>
-                        <button>Add</button>
-                        <button>Reset</button>
+                        <button type="submit">Add</button>
                     </div>
                 </form>
             </div>
@@ -81,6 +67,7 @@
                 <p class="pull-left">&copy; 2018 Store Manager. All Rights Reserved.</p>
                 <p class="pull-right">Created By &nbsp;<p class="pull-rightright">Nabulo Vivian Doreen</p></p>
     		</div><!-- /copyright -->         
-    </footer>    <time></time>
+    </footer>
+    <script src="javascript/sales/add_sales.js"></script>
 </body>
 </html>

@@ -38,39 +38,23 @@
         </section>
     </header>
     <section>
-
         <aside>
-           <nav id="side_nav">
+            <nav id="side_nav">
                 <ul>
                     <li class="active_link"><a href="admin.html"><span class="fa fa-home"></span>Dashboard</a></li>
-                    <li><a href="#">Contact</a>
+                    <li><a href="store_name.html">Store</a></li>
+                    <li><a href="">Categories</a>
                         <ul>
-                            <li><a href="clients.html">Clients</a></li>
-                            <li><a href="suppliers.html">Suppliers</a></li>
-                            <li><a href="store_attendants.html">Store Attendants</a></li>
+                            <li><a href="categories.html">Categories</a></li>   
+                            <li><a href="categories_report.html">Categories report</a></li>
                         </ul>
                     </li>
-                    <li><a href="store_name.html">Store</a></li>
                     <li><a href="">Products</a>
                         <ul>
-                            <li><a href="products.html">Products</a></li>
+                            <li><a href="products.html">Products</a></li>   
                             <li><a href="products_report.html">Products report</a></li>
                         </ul>
                     </li>
-                    <li><a href="#">Stock Inflows</a>
-                        <ul>
-                            <li><a href="stock_inflow.html">Stock inflow</a></li>
-                            <li><a href="stock_inflow_report.html">Stock inflow report</a></li>
-                        </ul>
-                    </li>
-                    <li><a href="#">Stock outflows</a>
-                        <ul>
-                            <li><a href="stock_outflow.html">Stock outflow</a></li>
-                            <li><a href="stock_outflow_report.html">Stock outflows report</a></li>
-                        </ul>
-                    </li>
-                    <li><a href="Product_catalog.html">Product catalog</a></li>
-                    <li><a href="shopping_cart.html">shopping cart</a></li>
                 </ul>
            </nav>
         </aside>
@@ -79,100 +63,23 @@
                 <time><strong>Date: </strong>02/12/018</time>
             </div>
             <div id="general_add"><h2>Our Store Attendants</h2></div>
-            <div id="gen_num"><strong>Total Number of store Attendants:</strong>100</div>
             <div id="gen_list">
-                <div id="search"><input type="text" id="myInput" onkeyup="myFunction()" placeholder="Search for store attendant.." title="Type in a name"></div>
+                <div id="message"></div>
+                <div id="search"><input type="text" id="myInput" onkeyup="myFunction()" placeholder="Search for store attendant.. By name" title="Type in a name"></div>
                 <table id="myTable">
-                    <tr class="header">
-                        <th>#</th>
-                        <th>Attendant</th>
-                        <th>gender</th>
-                        <th>Address</th>
-                        <th>Email</th>
-                        <th>Contact</th>
-                    </tr>
-                    <tr>
-                        <td>1</td>
-                        <td>Nabulo Vivian Doreen</td>
-                        <td>Female</td>
-                        <td>Kamulo</td>
-                        <td>nabulov@gmail.com</td>
-                        <td>0704224134</td>
-                    </tr>
-                    <tr>
-                        <td>2</td>
-                        <td>Wamale Eric</td>
-                        <td>Male</td>
-                        <td>Nasser</td>
-                        <td>eric@gmail.com</td>
-                        <td>0758715335</td>
-                    </tr>
-                    <tr>
-                        <td>3</td>
-                        <td>Ceaser Nathan</td>
-                        <td>Male</td>
-                        <td>Bukoto</td>
-                        <td>nathan@gmail.com</td>
-                        <td>0779582546</td>
-                    </tr>
-                    <tr>
-                        <td>4</td>
-                        <td>Ssozi Anthony</td>
-                        <td>Male</td>
-                        <td>Kamyokya</td>
-                        <td>sozi@gmail.com</td>
-                        <td>0704224134</td>
-                    </tr>
-                    <tr>
-                        <td>5</td>
-                        <td>Namee Winfred</td>
-                        <td>Female</td>
-                        <td>Kibuli</td>
-                        <td>winnie@gmail.com</td>
-                        <td>0745287953</td>
-                    </tr>
-                    <tr>
-                        <td>6</td>
-                        <td>Atwine Vivian D</td>
-                        <td>Male</td>
-                        <td>Kamulo</td>
-                        <td>nabulov@gmail.com</td>
-                        <td>0704224134</td>
-                    </tr>
-                    <tr>
-                        <td>7</td>
-                        <td>Nabwire Cedella</td>
-                        <td>Female</td>
-                        <td>Muk</td>
-                        <td>ced@gmail.com</td>
-                        <td>0704224134</td>
-                    </tr>
-                    <tr>
-                        <td>8</td>
-                        <td>Nabutuwa Janet</td>
-                        <td>Female</td>
-                        <td>Mutungo</td>
-                        <td>janetv@gmail.com</td>
-                        <td>07042598754</td>
-                    </tr>
-                    <tr>
-                        <td>9</td>
-                        <td>Mukuwa Lawrence</td>
-                        <td>Male</td>
-                        <td>Wandegeya</td>
-                        <td>mukuwa@gmail.com</td>
-                        <td>0701224134</td>
-                    </tr>
-                    <tr>
-                        <td>10</td>
-                        <td>Nabakooza Joan</td>
-                        <td>Female</td>
-                        <td>Nsambya</td>
-                        <td>joan@gmail.com</td>
-                        <td>0777224134</td>
-                    </tr>
-                    
+                    <thead>
+                        <tr class="header">
+                            <th>#</th>
+                            <th>Name</th>
+                            <th>Email</th>
+                            <th>Role</th>
+                        </tr>
+                    </thead>
+                    <tbody id="users_List">
+
+                    </tbody>
                 </table>
+
                 <div id="pagination">
                     <a href="#">Previous</a>
                     <a href="#">1</a>
@@ -196,5 +103,6 @@
                 <p class="pull-right">Created By &nbsp;<p class="pull-rightright">Nabulo Vivian Doreen</p></p>
     		</div><!-- /copyright -->         
     </footer>
+    <script src="javascript/users/get_users_report.js"></script>
 </body>
 </html>

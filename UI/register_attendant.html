@@ -39,39 +39,24 @@
     <section>
 
         <aside>
-           <nav id="side_nav">
+            <nav id="side_nav">
                 <ul>
                     <li class="active_link"><a href="admin.html"><span class="fa fa-home"></span>Dashboard</a></li>
-                    <li><a href="#">Contact</a>
+                    <li><a href="store_name.html">Store</a></li>
+                    <li><a href="">Categories</a>
                         <ul>
-                            <li><a href="clients.html">Clients</a></li>
-                            <li><a href="suppliers.html">Suppliers</a></li>
-                            <li><a href="store_attendants.html">Store Attendants</a></li>
+                            <li><a href="categories.html">Categories</a></li>   
+                            <li><a href="categories_report.html">Categories report</a></li>
                         </ul>
                     </li>
-                    <li><a href="store_name.html">Store</a></li>
                     <li><a href="">Products</a>
                         <ul>
-                            <li><a href="products.html">Products</a></li>
+                            <li><a href="products.html">Products</a></li>   
                             <li><a href="products_report.html">Products report</a></li>
                         </ul>
                     </li>
-                    <li><a href="#">Stock Inflows</a>
-                        <ul>
-                            <li><a href="stock_inflow.html">Stock inflow</a></li>
-                            <li><a href="stock_inflow_report.html">Stock inflow report</a></li>
-                        </ul>
-                    </li>
-                    <li><a href="#">Stock outflows</a>
-                        <ul>
-                            <li><a href="stock_outflow.html">Stock outflow</a></li>
-                            <li><a href="stock_outflow_report.html">Stock outflows report</a></li>
-                        </ul>
-                    </li>
-                    <li><a href="Product_catalog.html">Product catalog</a></li>
-                    <li><a href="shopping_cart.html">shopping cart</a></li>
                 </ul>
-           </nav>
+            </nav>
         </aside>
         <article>
             <div id="system_info">
@@ -79,55 +64,33 @@
             </div>
             <div id="general_form">
                 <div id="general_add"><h2> Add Store Attendant</h2></div>
-                <form method="POST" action="#" onsubmit ="return validate();" id="pdt-form" name = "pdt-form">
-                    <div class='form-row'>
-                        <label for='Upload_image'>Upload image: <input type="file" name="pic" accept="image/*"></label>
-                    </div>
-                    
-                    
+                <form method="POST" action="#" id="user-form" name = "pdt-form">
+                    <div class='form-row' id="message"></div>
                     <div class='form-row'>
                         <label for='name'>Name:</label>
                         <input id='name' name='name' type='text'/>
                     </div>
                     <div class='form-row'>
-                        <label for='name'>Username:</label>
-                        <input id='name' name='name' type='text'/>
-                    </div>
-                    <div class='form-row'>
-                        <label for='name'>password:</label>
-                        <input id='name' name='name' type='password'/>
-                    </div>
-                    <div class='form-row'>
-                        <label for='name'>Confirm password:</label>
-                        <input id='name' name='name' type='password'/>
-                    </div>
-                    <div class='form-row'>
                         <label for='email'>Email:</label>
-                        <input id='email' name='email' type="text"/>
+                        <input id='email' name='email' type='email'/>
                     </div>
                     <div class='form-row'>
-                        <label for='address'>Address:</label>
-                        <input id='address' name='address' type="text"/>
-                    </div>  
-                    <div class='form-row'>
-                        <label for='Pdt_category'>Date of Birth:</label>
-                        <input id='date' name='date' type='date'/>
+                        <label for='password'>password:</label>
+                        <input id='password' name='password' type='password'/>
                     </div>
                     <div class='form-row'>
-                        <label for='gender'>Gender:</label>
-                        Male<input id='radio' name='radio' type="radio"/>
-                        Female<input id='radio' name='radio' type="radio"/>
+                        <label for='confirm_password'>Confirm password:</label>
+                        <input id='confirm_password' name='confirm_password' type='password'/>
                     </div>
                     <div class='form-row'>
-                        <select>
-                            <option class="role" value="0">&nbsp;&nbsp;&nbsp;Select role</option>
-                            <option class="role" value="1">Store Attendant</option>
-                            <option class="role" value="2">Admin</option>
+                        <label for='role'>Role:</label>
+                        <select  id="role">
+                            <option class="role" value="attendant">Store attendant</option>
+                            <option class="role" value="admin">admin</option>
                         </select>
                     </div> 
                     <div class='form-row-button'>
-                        <button>Add</button>
-                        <button>Reset</button>
+                        <button type="submit">Add</button>
                     </div>
                 </form>
             </div>
@@ -138,6 +101,7 @@
                 <p class="pull-left">&copy; 2018 Store Manager. All Rights Reserved.</p>
                 <p class="pull-right">Created By &nbsp;<p class="pull-rightright">Nabulo Vivian Doreen</p></p>
     		</div><!-- /copyright -->         
-    </footer>    <time></time>
+    </footer>
+    <script src="javascript/users/add_users.js"></script>
 </body>
 </html>
