@@ -1,3 +1,5 @@
+let shoppingCart = [];
+
 window.addEventListener('load', (evt) =>{
     evt.preventDefault()
     get_products();
@@ -50,7 +52,7 @@ const categoryTd = document.createElement('td')
 const quantityTd = document.createElement('td')
 const unit_priceTd = document.createElement('td')
 
-const updateButton = document.createElement('button')
+const addSaleButton = document.createElement('button')
 
 countTd.innerHTML = count
 productTd.innerHTML = product
@@ -58,8 +60,8 @@ categoryTd.innerHTML = category
 quantityTd.innerHTML = quantity
 unit_priceTd.innerHTML = Unit_price
 
-updateButton.innerHTML = 'Add Sale'
-updateButton.addEventListener('click', () => {
+addSaleButton.innerHTML = 'Add to cart'
+addSaleButton.addEventListener('click', () => {
    addSale(id, product, category, quantity, Unit_price);
 })
 
@@ -70,15 +72,57 @@ tr.appendChild(categoryTd)
 tr.appendChild(quantityTd)
 tr.appendChild(unit_priceTd)
 
-tr.appendChild(updateButton)
+tr.appendChild(addSaleButton)
 }
 
 const addSale = (searchId, product, category, quantity, Unit_price) =>{
-window.localStorage.setItem("product",product);
-window.localStorage.setItem("category",category);
-window.localStorage.setItem("quantity",quantity);
-window.localStorage.setItem("Unit_price",Unit_price);
-location.href = 'add_sales.html?searchId='+searchId;
+
+div_id = document.getElementById('form_sale')
+pdt_id = document.getElementById('pdt_code')
+pdt_id.value = searchId
+pdt_name = document.getElementById('product_name')
+pdt_name.value = product
+
+// cart_total = document.getElementById('cart_total')
+var singleProduct = {};
+singleProduct.Name=product;
+singleProduct.Description=quantity;
+singleProduct.Price=Unit_price;
+//Add newly created product to  cart 
+shoppingCart.push(singleProduct);
+
+// cart_total.innerHTML=shoppingCart
+
+//call display function to show on screen
+displayShoppingCart();
+}
+
+const displayShoppingCart = () =>{
+    var orderedProductsTblBody=document.getElementById("orderedProductsTblBody");
+    //ensure we delete all previously added rows from ordered products table
+    while(orderedProductsTblBody.rows.length>0) {
+        orderedProductsTblBody.deleteRow(0);
+    }
+
+    //variable to hold total price of shopping cart
+    var cart_total_price=0;
+    //iterate over array of objects
+    for(var product in shoppingCart){
+        //add new row      
+        var row=orderedProductsTblBody.insertRow();
+        //create three cells for product properties 
+        var cellName = row.insertCell(0);
+        var cellDescription = row.insertCell(1);
+        var cellPrice = row.insertCell(2);
+        cellPrice.align="right";
+        //fill cells with values from current product 
+        cellName.innerHTML = shoppingCart[product].Name;
+        cellDescription.innerHTML = shoppingCart[product].Description;
+        cellPrice.innerHTML = shoppingCart[product].Price;
+        cart_total_price+=shoppingCart[product].Price;
+    }
+    //total sum of price
+    document.getElementById("cart_total").innerHTML=cart_total_price;
 }
 
 function myFunction() {

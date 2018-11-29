@@ -44,6 +44,7 @@
                     <li class="active_link"><a href="attendant_page.html"><span class="fa fa-home"></span>Dashboard</a></li>
                     <li><a href="stock_outflow.html">Stock outflow</a></li>
                     <li><a href="stock_outflow_report.html">Stock outflows report</a></li>
+                    <li><a href="products_sale.html">Make a sale</a></li>
                 </ul>
             </nav>
         </aside>
@@ -51,50 +52,100 @@
             <div id="system_info">
                 <time><strong>Date: </strong>02/12/018</time>
             </div>
-            <div id="general_add"><h2>Available Products</h2></div>
+            <div id="sale_section">
             <div id="gen_list">
+                <div id="general_add"><h2>Available Products</h2></div>
                 <div id="search">
                     <input type="text" id="myInput" onkeyup="myFunction()" placeholder="Search by Product name.." title="Type in a name">
                 </div>
-                <div id="message"></div>
-                <table id="myTable">
-                    <thead>
-                        <tr class="header">
-                            <th>#</th>
-                            <th>Product</th>
-                            <th>Category</th>
-                            <th>Quantity</th>
-                            <th>Unit Price</th>
-                            <th colspan="3">Action</th>
-                        </tr>
-                    </thead>
-                    <tbody id="products_List">
-
-                    </tbody>
-                </table>
-                <div id="pagination">
-                    <a href="#">Previous</a>
-                    <a href="#">1</a>
-                    <a href="#">2</a>
-                    <a href="#">3</a>
-                    <a href="#">4</a>
-                    <a href="#">5</a>
-                    <a href="#">6</a>
-                    <a href="#">7</a>
-                    <a href="#">8</a>
-                    <a href="#">9</a>
-                    <a href="#">10</a>
-                    <a href="#">Next</a>
+                    <table id="myTable">
+                        <thead>
+                            <tr class="header">
+                                <th>#</th>
+                                <th>Product</th>
+                                <th>Category</th>
+                                <th>Quantity</th>
+                                <th>Unit Price</th>
+                                <th>Action</th>
+                            </tr>
+                        </thead>
+                        <tbody id="products_List">
+                        </tbody>
+                    </table>
+                    <div id="pagination">
+                        <a href="#">Previous</a>
+                        <a href="#">1</a>
+                        <a href="#">2</a>
+                        <a href="#">3</a>
+                        <a href="#">4</a>
+                        <a href="#">5</a>
+                        <a href="#">6</a>
+                        <a href="#">7</a>
+                        <a href="#">8</a>
+                        <a href="#">9</a>
+                        <a href="#">10</a>
+                        <a href="#">Next</a>
+                    </div>
+                </div>
+                <div id="form_sale">
+                    Click on the add to cart button to add items to buyer's cart
+                    <div id="form_wrap">
+                        <div id="message"></div>
+                        <div id="general_add_sales"><h3>Add Sale</h3></div>
+                        <form method="" action="#" id="sales_form_add" name = "pdt-form">
+                        <div class='form-row-sale' id="message"></div>
+                        <div class='form-row-sale'>    
+                            <label for='Product'>Product code:</label><br/>
+                            <input type='number' id='pdt_code' name='pdt_code' class = 'input_pdt_code' disabled/>
+                        </div> 
+                        <div class='form-row-sale'>    
+                            <label for='Product'>Product:</label><br/>
+                            <input type='text' id='product_name' name='pdt_code' class = 'input_pdt_code' disabled/>
+                        </div>  
+                        <div class='form-row-sale'>
+                            <label for='quantity'>Quantity</label>
+                            <input id='quantity' name='quantity' type='number'/>
+                        </div>
+                        <div class='form-row-sale'>
+                            <label for='unit_price'>Price</label>
+                            <input id='unit_price' name='unit_price' type='number'/>
+                        </div>
+                        <div class='form-row-button-sale'>
+                            <button type="submit">Add</button>
+                        </div>
+                        </form>
+                    </div>
+                    <div id="cart_totall"></div>
+                    <div class="panel-right">
+                        <table id="myTableright">
+                            <thead>
+                                <tr class="header">
+                                    <th>Product</th>
+                                    <th>Quantity</th>
+                                    <th>Price</th>
+                                </tr>
+                            </thead>
+                            <tbody id="orderedProductsTblBody">
+                            </tbody>
+                            <tfoot>
+                                <tr>   
+                                    <td colspan="3" align="right" id = "cart_total"></td>
+                                </tr>
+                            </tfoot>
+                        </table>
+                    </div>
                 </div>
             </div>
+        </div>
         </article>
     </section>
     <footer>
-    		<div class="copyright">
-                <p class="pull-left">&copy; 2018 Store Manager. All Rights Reserved.</p>
-                <p class="pull-right">Created By &nbsp;<p class="pull-rightright">Nabulo Vivian Doreen</p></p>
-    		</div><!-- /copyright -->         
+        <div class="copyright">
+            <p class="pull-left">&copy; 2018 Store Manager. All Rights Reserved.</p>
+            <p class="pull-right">Created By &nbsp;<p class="pull-rightright">Nabulo Vivian Doreen</p></p>
+        </div>    
     </footer>
     <script src="javascript/sales/get_products.js"></script>
+    <script src="javascript/sales/add_sales.js"></script>
 </body>
 </html>
