@@ -173,21 +173,26 @@ input:focus,
 button:focus{
     outline: none;
 }
-input[type=text],input[type=number], input[type=file], button{
+input[type=text],input[type=number], input[type=file], input[type=email], select, button{
     color: #000000;
     font-family: Nexa light;
     border-radius: 3px;
 }
 
-input[type=text], input[type=password], input[type=number]{
+input[type=text], input[type=password], input[type=number], input[type=email], select{
     width: 100%;
     padding: 5px;
     margin-top: 0.2cm;
     border: 1px solid orange;
 }
 
+.form-row-sale{
+    padding: 0.5em;
+    letter-spacing: 0.1em;
+}
+
 .form-row{
-    padding: 1em;
+    padding: 0.5em;
     letter-spacing: 0.1em;
 }
 .form-row-button{
@@ -198,11 +203,22 @@ input[type=text], input[type=password], input[type=number]{
     padding-bottom: 5em;
     text-align: center;
 }
+.form-row-button-sale{
+    width: 100%;
+    margin: 0px auto;
+    border-radius: 25px;
+    padding-top: 1em;
+    padding-bottom: 1em;
+    text-align: center;
+}
+.form-row-button-sale button{
+    background-color: orangered;
+}
 button{
 	border:1px solid orange;
     background-color: orange;
     font-size: 1em;
-    width: 18%;
+    /* width: 40%; */
     color: #ffffff;
     border-radius: 10px;
     font-family: arial;
@@ -227,13 +243,37 @@ button:hover{
     text-align: center;
     border-bottom: 1px solid rgb(250, 66, 66);
 }
-
+#form_sale{
+    padding-top: 3cm;
+    width: 30%;
+    /* border: 1px solid #336; */
+}
 h2{
     color: orangered;
 }
-#pdt-form{
+#pdt-form, #category_form{
     width: 60%;
     margin: 0 auto;
+}
+#sales_form_add{
+    width: 90%;
+    margin: 0 auto;    
+}
+#form_wrap{
+    width: 80%;
+    margin: 0 auto;
+    border: 1px solid orange;
+    border-radius: 5px;
+    background-color: orange;
+}
+#general_add_sales h3{
+    color:#ffffff;
+    padding: 3px;
+    border: 1px solid orange;
+    background-color: orangered;
+    margin-top: 1cm;;
+    width: 100%;
+    text-align: center;
 }
 #view_product{
     display:flex;
@@ -340,10 +380,9 @@ h2{
     width: 50%; 
     margin: 10px auto 0px auto; 
 }
-
 #gen_list{
-    width: 98%;
-    margin: 0 auto;
+    width: 70%;
+    padding: 10px;
 }
 #store_location{
     padding: 10px;
@@ -351,13 +390,13 @@ h2{
     width: 40%;
     margin: 10px auto;
 }
-#add_product{
+#add_product, #add_sale, #add_category{
     text-align: center;
     float: right;
     width: 15%;
     border-radius: 10px;
 }
-#add_product a{
+#add_product, #add_sale, #add_category a{
     padding: 9px;
     text-decoration: none;
     color: #ffffff;
@@ -402,13 +441,19 @@ td a{
   ::placeholder{
       color: orange;
   }
-  
+  #sale_section{
+    display: flex;
+    flex-wrap: nowrap;
+    width: 100%;
+    padding: 2px;
+  }
   #myTable {
     border-collapse: collapse;
     width: 100%;
     border: 1px solid #ddd;
     font-size: 17px;
   }
+  
   #myTable th{
     color: orangered;
   }

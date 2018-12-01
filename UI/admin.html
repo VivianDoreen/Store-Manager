@@ -5,7 +5,6 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <title>admin</title>
     <meta name="viewport" content="width=device-width, initial-scale=1">
-    <link rel="stylesheet" href="font-awesome.css">
     <link rel="stylesheet" type="text/css" media="screen" href="css/style_gen.css"/>
     <link rel="shortcut icon" href="assets/ico/favicon.png">
     <script src="javascript/main.js" type="text/javascript"></script>
@@ -30,7 +29,7 @@
                             <li><a href="assign_roles.html">Assign Role</a></li>
                         </ul>
                     </li>
-                    <li><a href="index.html">Logout</a></li>
+                    <li><a href="" id="logout_link">Logout</a></li>
                 </ul>
             </nav>
             <div id="profile_pic">Nabwire Cedella (Admin) <img id="logopng" src="assets/portfolio/IMG_1473.JPG" width="50" height="50" alt="portfolio"></div>
@@ -41,27 +40,19 @@
            <nav id="side_nav">
                 <ul>
                     <li class="active_link"><a href="admin.html"><span class="fa fa-home"></span>Dashboard</a></li>
-                    <li><a href="#">Contact</a>
+                    <li><a href="store_name.html">Store</a></li>
+                    <li><a href="">Categories</a>
                         <ul>
-                            <li><a href="clients.html">Clients</a></li>
-                            <li><a href="suppliers.html">Suppliers</a></li>
-                            <li><a href="store_attendants.html">Store Attendants</a></li>
+                            <li><a href="categories.html">Categories</a></li>   
+                            <li><a href="categories_report.html">Categories report</a></li>
                         </ul>
                     </li>
-                    <li><a href="store_name.html">Store</a></li>
                     <li><a href="">Products</a>
                         <ul>
-                            <li><a href="products.html">Products</a></li>
+                            <li><a href="products.html">Products</a></li>   
                             <li><a href="products_report.html">Products report</a></li>
                         </ul>
                     </li>
-                    <li><a href="#">Stock Inflows</a>
-                        <ul>
-                            <li><a href="stock_inflow.html">Stock inflow</a></li>
-                            <li><a href="stock_inflow_report.html">Stock inflow report</a></li>
-                        </ul>
-                    </li>
-                    <li><a href="Product_catalog.html">Product catalog</a></li>
                 </ul>
            </nav>
         </aside>
@@ -73,9 +64,9 @@
     <footer>
     		<div class="copyright">
                 <p class="pull-left">&copy; 2018 Store Manager. All Rights Reserved.</p>
-                <p class="pull-right">Created By &nbsp;<p class="pull-rightright">Nabulo Vivian Doreen</p></p>
+                <p class="pull-right">Created By &nbsp;<p class="pull-rightright">Nabulo Vivian Doreen</p>
     		</div><!-- /copyright -->         
     </footer>
-    <time></time>
+    <script src="javascript/auth/logout.js"></script>
 </body>
 </html>

@@ -25,12 +25,11 @@
     <section>
 
         <aside>
-           <nav id="side_nav">
+            <nav id="side_nav">
                 <ul>
                     <li class="active_link"><a href="attendant_page.html"><span class="fa fa-home"></span>Dashboard</a></li>
                     <li><a href="stock_outflow.html">Stock outflow</a></li>
                     <li><a href="stock_outflow_report.html">Stock outflows report</a></li>
-                    <li><a href="products_sale.html">Make a sale</a></li>
                 </ul>
            </nav>
         </aside>
@@ -41,17 +40,26 @@
             <div id="general_add"><h2>Stock outflow</h2></div>
             <div id="gen_list">
                 <div id="search">
-                   <input type="text" id="myInput" onkeyup="myFunction()" placeholder="Search for product sold.." title="Type in a name">
                 </div>
                 <table id="myTable">
                     <thead>
-                        <tr class="header">
-                            <th>#</th>
-                            <th>Product</th>
-                            <th>Quantity</th>
-                            <th>Unit price</th>
-                            <th>Total price</th>
-                            <th>Action</th>
+                        <tr class="header" id="product_code">
+                            <th>Product Code :</th>
+                        </tr>
+                        <tr class="header" id="quantity">
+                            <th>Quantity :</th>
+                        </tr>
+                        <tr class="header" id="unit_price">
+                            <th>Unit Price :</th>
+                        </tr>
+                        <tr class="header" id="total_price">
+                            <th>Total price :</th>
+                        </tr>
+                        <tr class="header" id="date_created">
+                            <th>Date created :</th>
+                        </tr>
+                        <tr class="header" id="admin">
+                            <th>Admin :</th>
                         </tr>
                     </thead>
                     <tbody id="sales_list">
@@ -80,6 +88,6 @@
                 <p class="pull-right">Created By &nbsp;<p class="pull-rightright">Nabulo Vivian Doreen</p></p>
     		</div><!-- /copyright -->         
     </footer>
-    <script src="javascript/sales/get_sales.js"></script>
+    <script src="javascript/sales/view_sale.js"></script>
 </body>
 </html>
