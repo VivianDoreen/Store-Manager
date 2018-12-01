@@ -40,7 +40,7 @@ const login_user = () =>{
                 window.location = 'admin.html'
             }
             if ((response['role']) == 'attendant'){
-                window.location = 'stock_outflow.html'
+                window.location = 'attendant_page.html'
             }
                 // window.location = 'admin.html'
                 // console.log(response['role']);

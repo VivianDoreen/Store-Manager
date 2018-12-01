@@ -186,8 +186,13 @@ input[type=text], input[type=password], input[type=number], input[type=email], s
     border: 1px solid orange;
 }
 
+.form-row-sale{
+    padding: 0.5em;
+    letter-spacing: 0.1em;
+}
+
 .form-row{
-    padding: 1em;
+    padding: 0.5em;
     letter-spacing: 0.1em;
 }
 .form-row-button{
@@ -197,6 +202,17 @@ input[type=text], input[type=password], input[type=number], input[type=email], s
     padding-top: 2em;
     padding-bottom: 5em;
     text-align: center;
+}
+.form-row-button-sale{
+    width: 100%;
+    margin: 0px auto;
+    border-radius: 25px;
+    padding-top: 1em;
+    padding-bottom: 1em;
+    text-align: center;
+}
+.form-row-button-sale button{
+    background-color: orangered;
 }
 button{
 	border:1px solid orange;
@@ -227,13 +243,37 @@ button:hover{
     text-align: center;
     border-bottom: 1px solid rgb(250, 66, 66);
 }
-
+#form_sale{
+    padding-top: 3cm;
+    width: 30%;
+    /* border: 1px solid #336; */
+}
 h2{
     color: orangered;
 }
-#pdt-form, #sales-form, #category_form{
+#pdt-form, #category_form{
     width: 60%;
     margin: 0 auto;
+}
+#sales_form_add{
+    width: 90%;
+    margin: 0 auto;    
+}
+#form_wrap{
+    width: 80%;
+    margin: 0 auto;
+    border: 1px solid orange;
+    border-radius: 5px;
+    background-color: orange;
+}
+#general_add_sales h3{
+    color:#ffffff;
+    padding: 3px;
+    border: 1px solid orange;
+    background-color: orangered;
+    margin-top: 1cm;;
+    width: 100%;
+    text-align: center;
 }
 #view_product{
     display:flex;
@@ -340,10 +380,9 @@ h2{
     width: 50%; 
     margin: 10px auto 0px auto; 
 }
-
 #gen_list{
-    width: 98%;
-    margin: 0 auto;
+    width: 70%;
+    padding: 10px;
 }
 #store_location{
     padding: 10px;
@@ -402,13 +441,19 @@ td a{
   ::placeholder{
       color: orange;
   }
-  
+  #sale_section{
+    display: flex;
+    flex-wrap: nowrap;
+    width: 100%;
+    padding: 2px;
+  }
   #myTable {
     border-collapse: collapse;
     width: 100%;
     border: 1px solid #ddd;
     font-size: 17px;
   }
+  
   #myTable th{
     color: orangered;
   }

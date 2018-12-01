@@ -14,7 +14,7 @@ const get_product_id = () =>{
 }
 
 const url = 'http://127.0.0.1:8080/api/v1/sales';
-const sales_form =  document.getElementById('sales-form')
+const sales_form =  document.getElementById('sales_form_add')
 sales_form.addEventListener('submit', (evt) =>{
         evt.preventDefault()
         add_sale();
@@ -61,7 +61,7 @@ sales_form.addEventListener('submit', (evt) =>{
                 result.innerHTML= response['message']
              }
              else{
-                result.innerHTML= 'product'+ response['message']['product']+'Sold'
+                result.innerHTML= 'product '+response['message']['product']+' Sold'
                 console.log(response['message']['product']);
              }
          }).catch(error=>{
