@@ -61,7 +61,7 @@ sales_form.addEventListener('submit', (evt) =>{
                 result.innerHTML= response['message']
              }
              else{
-                result.innerHTML= 'product'+ response['message']['product']+'Sold'
+                result.innerHTML= 'product '+response['message']['product']+' Sold'
                 console.log(response['message']['product']);
              }
          }).catch(error=>{
