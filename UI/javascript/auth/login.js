@@ -6,7 +6,7 @@ login_user();
 const login_user = () =>{
     const email = document.getElementById('email').value;
     const password = document.getElementById('password').value;
-    const url = 'http://127.0.0.1:8080/api/v1/auth/login';
+    const url = 'https://b13challenge3.herokuapp.com/api/v1/auth/login';
     const config = {
         method : 'POST',
         headers:{
