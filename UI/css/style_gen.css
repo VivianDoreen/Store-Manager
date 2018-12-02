@@ -445,7 +445,6 @@ td a{
     display: flex;
     flex-wrap: nowrap;
     width: 100%;
-    border: 1px solid rgb(199, 15, 15);
     padding: 2px;
   }
   #myTable {
