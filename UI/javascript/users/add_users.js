@@ -1,4 +1,4 @@
-const url = 'http://127.0.0.1:8080/api/v1/auth/signup';
+const url = 'https://b13challenge3.herokuapp.com/api/v1/auth/signup';
 const product_form =  document.getElementById('user-form')
 product_form.addEventListener('submit', (evt) =>{
         evt.preventDefault()
